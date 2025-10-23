@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV – Mijail Galarza Vaca</title>
+  <meta name="description" content="Hoja de vida de Mijail Galarza Vaca — Estudiante de Ingeniería en Sistemas, con experiencia en mantenimiento de computadoras, call center y asistencia administrativa." />
+  <meta property="og:title" content="CV – Mijail Galarza Vaca" />
+  <meta property="og:description" content="Estudiante de Ingeniería en Sistemas. Mantenimiento de computadoras, instalación de software y soporte al cliente." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f172a;
+      --muted:#94a3b8;
+      --text:#e2e8f0;
+      --accent:#22d3ee;
+      --chip:#1e293b;
+      --border:#223048;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial;
+      color:var(--text);
+      background:linear-gradient(180deg,#0a0f1d, #0b1220 30%, #0b1220 100%);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    .wrapper{
+      max-width:1000px;
+      margin:32px auto;
+      padding:24px;
+    }
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.005));
+      border:1px solid var(--border);
+      border-radius:18px;
+      box-shadow:0 10px 40px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    header{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:16px;
+      padding:28px 28px 12px 28px;
+      border-bottom:1px solid var(--border);
+      background:
+        radial-gradient(1200px 400px at -10% -30%, rgba(34,211,238,.12), transparent 60%),
+        radial-gradient(700px 300px at 120% -20%, rgba(99,102,241,.12), transparent 60%);
+    }
+    .name{font-size:clamp(28px,4vw,38px); font-weight:800; letter-spacing:.3px; margin:0}
+    .role{margin:6px 0 0 0; color:var(--muted); font-weight:500}
+    .actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      background:linear-gradient(180deg,#111827,#0f172a);
+      color:var(--text); padding:10px 14px; border-radius:12px;
+      border:1px solid var(--border); text-decoration:none; font-weight:600; font-size:14px;
+    }
+    .btn:hover{border-color:#2a3b5f}
+    .btn-outline{background:transparent}
+    .grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:22px;
+      padding:22px 28px 28px 28px;
+    }
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} header{grid-template-columns:1fr} .actions{justify-content:flex-start} }
+    section{padding:18px 0}
+    h2{font-size:18px; letter-spacing:.4px; margin:0 0 12px 0; color:#e6f4ff}
+    p{margin:10px 0 0 0; color:#dbe7fa}
+    .muted{color:var(--muted)}
+    .kpis{display:flex; gap:14px; flex-wrap:wrap; margin-top:12px}
+    .chip{
+      background:var(--chip); color:#d9e3f5; border:1px solid var(--border);
+      padding:8px 12px; border-radius:999px; font-size:13px; font-weight:600
+    }
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .list-tight li{margin:4px 0}
+    .block{background:rgba(255,255,255,.02); border:1px solid var(--border); border-radius:14px; padding:14px 16px}
+    .contact a{color:var(--text); text-decoration:none}
+    .contact a:hover{text-decoration:underline}
+    .two-col{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width:680px){ .two-col{grid-template-columns:1fr} }
+    .small{font-size:13px}
+    footer{padding:18px 28px 28px 28px; border-top:1px solid var(--border); color:var(--muted); display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap}
+    .print-hint{opacity:.85}
+    /* Print-friendly */
+    @media print{
+      body{background:#fff; color:#111}
+      .card{box-shadow:none; border-color:#ddd}
+      header, footer{border-color:#ddd; background:#fff}
+      .btn{display:none !important}
+      .chip{border-color:#ddd; background:#f6f7f9; color:#111}
+      .muted{color:#444}
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    /* Simple bullets using emojis */
+    .emoji{font-size:18px; vertical-align:-2px}
+    .quote{font-style:italic; color:#cbd5e1; border-left:3px solid var(--accent); padding-left:10px; margin-top:8px}
+    .divider{height:1px; background:var(--border); margin:14px 0}
+  </style>
+
+  <!-- Schema.org JSON-LD for better SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mijail Galarza Vaca",
+    "jobTitle": "Estudiante de Ingeniería en Sistemas",
+    "email": "mailto:thearkhyom@gmail.com",
+    "telephone": "+59160947716",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Jenecheru, Barrio Marítimo Calle 5",
+      "addressCountry": "BO"
+    },
+    "url": "https://<tu-usuario>.github.io/",
+    "knowsAbout": ["Mantenimiento de computadoras", "Instalación de software", "Soporte al cliente", "Reuniones virtuales", "Call Center", "Asistencia administrativa"],
+    "alumniOf": "Universidad Privada Domingo Savio"
+  }
+  </script>
+</head>
+<body itemscope itemtype="https://schema.org/Person">
+  <div class="wrapper">
+    <div class="card">
+      <header>
+        <div>
+          <h1 class="name" itemprop="name">Mijail Galarza Vaca</h1>
+          <p class="role" itemprop="jobTitle">Estudiante de Ingeniería en Sistemas</p>
+          <div class="kpis contact small" style="margin-top:10px">
+            <span class="chip">📍 <span itemprop="address">Av. Jenecheru, Barrio Marítimo Calle 5, Bolivia</span></span>
+            <a class="chip" href="tel:+59160947716" itemprop="telephone">📞 (+591) 60947716</a>
+            <a class="chip" href="mailto:thearkhyom@gmail.com" itemprop="email">📧 thearkhyom@gmail.com</a>
+            <a class="chip" href="https://maps.google.com/?q=Av.%20Jenecheru%20Barrio%20Mar%C3%ADtimo%20Calle%205%20Bolivia" target="_blank" rel="noopener">🗺️ Ver en mapa</a>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn" href="#" onclick="window.print();return false;">🖨️ Imprimir / Guardar PDF</a>
+          <a class="btn btn-outline" href="mailto:thearkhyom@gmail.com?subject=Contacto%20por%20CV&body=Hola%20Mijail%2C%20vi%20tu%20CV%20y%20me%20gustar%C3%ADa%20contactarte.">✉️ Contactar</a>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section>
+            <h2>🧠 Sobre mí</h2>
+            <div class="block">
+              <p>Soy un estudiante de la carrera de Ingeniería en Sistemas, con interés en el área tecnológica, especialmente en el mantenimiento de computadoras, software y programas 3D. Me encuentro iniciando mi experiencia laboral, buscando oportunidades para crecer profesionalmente y aplicar mis conocimientos en entornos reales.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>🧑‍💻 Experiencia laboral</h2>
+            <div class="block">
+              <p><strong>Unidad Educativa Carlos La Torre y Universidad Privada Domingo Savio</strong></p>
+              <ul class="list-tight">
+                <li>Servicio de <strong>Call Center</strong> y atención al cliente.</li>
+              </ul>
+              <div class="divider"></div>
+              <p><strong>Universidad Privada Domingo Savio</strong></p>
+              <ul class="list-tight">
+                <li>Asistencia en <strong>clases virtuales</strong> (organización de reuniones y soporte a docentes/estudiantes).</li>
+                <li>Apoyo en <strong>administración de transacciones bancarias</strong>.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>🎓 Educación</h2>
+            <div class="block two-col">
+              <div>
+                <p><strong>Unidad Educativa Carlos La Torre Lozada “B”</strong><br>
+                <span class="muted small">Diploma de Bachiller (febrero 2017 – enero 2022)</span></p>
+              </div>
+              <div>
+                <p><strong>Universidad Privada Domingo Savio (UPDS)</strong><br>
+                <span class="muted small">Ingeniería en Sistemas — <em>Actualmente en cuarto semestre</em></span></p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>🚀 Objetivo profesional</h2>
+            <div class="block">
+              <p>Seguir desarrollando mis habilidades técnicas y adquirir experiencia en el campo de la ingeniería en sistemas, contribuyendo al crecimiento de proyectos tecnológicos y aprendiendo de profesionales del área.</p>
+              <p class="quote">“Cada error es una nueva oportunidad para aprender.”</p>
+            </div>
+          </section>
+        </main>
+
+        <aside>
+          <section>
+            <h2>🧩 Habilidades</h2>
+            <div class="block">
+              <ul>
+                <li>Mantenimiento de computadoras y software</li>
+                <li>Instalación de programas en Windows</li>
+                <li>Atención y servicio al cliente</li>
+                <li>Organización de reuniones virtuales</li>
+                <li>Experiencia en Call Center</li>
+                <li>Asistencia administrativa</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>🌍 Idiomas</h2>
+            <div class="block">
+              <ul class="list-tight">
+                <li>Inglés: <strong>Nivel medio</strong></li>
+                <li>Español: <strong>Nativo</strong></li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>📫 Contacto</h2>
+            <div class="block contact small">
+              <p>📍 Av. Jenecheru, Barrio Marítimo Calle 5, Bolivia</p>
+              <p>📞 <a href="tel:+59160947716">(+591) 60947716</a></p>
+              <p>📧 <a href="mailto:thearkhyom@gmail.com">thearkhyom@gmail.com</a></p>
+              <p>💬 <a href="https://wa.me/59160947716" target="_blank" rel="noopener">WhatsApp</a></p>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <footer>
+        <span class="print-hint">Consejo: usa “Imprimir → Guardar como PDF” para descargar tu CV.</span>
+        <span class="muted small">© <span id="year"></span> Mijail Galarza Vaca</span>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
